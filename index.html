@@ -263,6 +263,11 @@
     footer .footer-text a:hover {
       color: #fbbf24;
     }
+
+.pagination {
+  margin-bottom: 100px; /* pushes it up above the footer */
+}
+
   </style>
 </head>
 <body>
@@ -355,7 +360,7 @@ function renderVideos() {
       <img class="video-thumb" src="${previewURL}" alt="${video.title || 'Video'}">
       <div class="play-overlay">▶️</div>
       <div class="video-title">${video.title || 'Untitled'}</div>
-      <div class="view-count">Views: ${viewCount}</div> <!-- View Count Display -->
+      <div class="view-count">👀: ${viewCount}</div> <!-- View Count Display -->
     `;
 
     videoCard.addEventListener('click', () => openModal(video));
